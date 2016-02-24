@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .search-bar {
+        border: 3px solid black;
+        margin: 50px auto;
+        max-width: 52%;
+        padding: 0.5rem 1rem;
+      }
+
+      .search-bar h1 {
+        margin: 0;
+        margin-bottom: 0.75rem;
+        padding; 0;
+      }
+
+      .search-bar .row {
+        font-size: 0.75rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .search-bar .row > li {
+        display: inline-block;
+        margin-right: 1rem;
+      }
+
+      .search-bar form {
+        width: 100%;
+      }
+
+      .search-bar #beds_refinement {
+        position: relative;
+      }
+
+      .search-bar #beds_refinement > * {
+        display: block;
+      }
+
+      .search-bar #beds_refinement select {
+        position: absolute;
+        z-index: 100;
+      }
+
+      .search-bar #price_refinement {
+        position: relative;
+      }
+
+      .search-bar #price_refinement > * {
+        display: block;
+      }
+
+      .search-bar #price_refinement #prices {
+        background-color: lightgrey;
+        position: absolute;
+        width: 140px;
+        z-index: 100;
+      }
+
+      .search-bar #price_refinement #prices > * {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .search-bar #price_refinement #prices > span {
+        margin: 0 0.25rem;
+      }
+
+      .search-bar #price_refinement #prices #min_price_panel > *,
+      .search-bar #price_refinement #prices #max_price_panel > * {
+        clear: both;
+        display: block;
+        max-width: 2rem;
+      }
+
+      .search-bar #price_refinement #prices #min_price_panel input {
+        display: block;
+        width: 3.25rem;
+      }
+
+      .search-bar #price_refinement #prices #min_price_panel select,
+      .search-bar #price_refinement #prices #max_price_panel select {
+        min-width: 2.25rem;
+      }
+
+      .search-bar #refinement_pills_panel {
+        overflow: auto;
+        width: 100%;
+      }
+
+      .search-bar #refinement_pills_panel ul {
+        list-style:none;
+        float: left;
+          max-width: 60%;
+      }
+
+      .search-bar #refinement_pills_panel ul li {
+        display: inline-block;
+        margin-right: 1rem;
+      }
+
+      .search-bar #refinement_pills_panel #filtered_results_count {
+        float: right;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="search_bar"></div>
+    <script src="search_bar.js"></script>
+  </body>
+</html>
+
