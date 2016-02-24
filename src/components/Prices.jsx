@@ -45,7 +45,7 @@ const Prices = (props) => {
               <input id="min_price"
                      type="text"
                      placeholder="min"
-                     defaultValue={ priceMin }/>
+                     value={ priceMin }/>
 
               <select size="8"
                       onChange={ (ev) => change("priceMin", ev.target.value) }>
@@ -66,7 +66,7 @@ const Prices = (props) => {
               <input id="max_price"
                      type="text"
                      placeholder="max"
-                     defaultValue={ priceMax }/>
+                     value={ priceMax }/>
 
               <select size="12"
                       onChange={ (ev) => this.handleMaxChange(ev) }>

@@ -146,7 +146,7 @@ describe('Prices component', () => {
       const testComponent = <Prices { ...props }
                               change={ () => {} }
                               togglePanel={ () => {} } />
-      const expected = "defaultValue={undefined}"
+      const expected = "value={undefined}"
 
       renderer.render(testComponent)
       const inputEle = findAllWithType(renderer.getRenderOutput(), 'input')
@@ -168,7 +168,7 @@ describe('Prices component', () => {
       const testComponent = <Prices { ...props }
                               change={ () => {} }
                               togglePanel={ () => {} } />
-      const expected = 'defaultValue="100"'
+      const expected = 'value="100"'
 
       renderer.render(testComponent)
       const inputEle = findAllWithType(renderer.getRenderOutput(), 'input')
@@ -189,7 +189,7 @@ describe('Prices component', () => {
       const testComponent = <Prices { ...props }
                               change={ () => {} }
                               togglePanel={ () => {} } />
-      const expected = 'defaultValue="1000"'
+      const expected = 'value="1000"'
 
       renderer.render(testComponent)
       const inputEle = findAllWithType(renderer.getRenderOutput(), 'input')

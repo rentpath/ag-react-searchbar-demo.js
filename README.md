@@ -84,6 +84,7 @@ $ open http://localhost:8080
   - Styling is needed.
       - How should we do this in React?
       - How would a reusable component be left open for theming?
+  - Handle user entered prices in the Prices component.
 
 ### Resources
   - https://camjackson.net/post/9-things-every-reactjs-beginner-should-know
