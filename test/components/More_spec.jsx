@@ -28,7 +28,7 @@ describe('More component', () => {
       const expected ="MORE"
 
       renderer.render(testComponent)
-      const button = findWithType(renderer.getRenderOutput(), 'button')
+      const button = findWithType(renderer.getRenderOutput(), 'a')
 
       expect(button).to.include(expected)
     })
@@ -42,7 +42,7 @@ describe('More component', () => {
       const expected ="LESS"
 
       renderer.render(testComponent)
-      const button = findWithType(renderer.getRenderOutput(), 'button')
+      const button = findWithType(renderer.getRenderOutput(), 'a')
 
       expect(button).to.include(expected)
     })
@@ -55,7 +55,7 @@ describe('More component', () => {
       const expected = true
 
       renderer.render(testComponent)
-      findWithType(renderer.getRenderOutput(), 'button').props.onClick()
+      findWithType(renderer.getRenderOutput(), 'a').props.onClick()
 
       expect(hasChanged).to.equal(expected)
     })

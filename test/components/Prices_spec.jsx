@@ -25,7 +25,7 @@ describe('Prices component', () => {
       const expected ="PRICE"
 
       renderer.render(testComponent)
-      const button = findWithType(renderer.getRenderOutput(), 'button')
+      const button = findWithType(renderer.getRenderOutput(), 'a')
 
       expect(button).to.include(expected)
     })
@@ -38,7 +38,7 @@ describe('Prices component', () => {
       const expected ="$100 - Any"
 
       renderer.render(testComponent)
-      const button = findWithType(renderer.getRenderOutput(), 'button')
+      const button = findWithType(renderer.getRenderOutput(), 'a')
 
       expect(button).to.include(expected)
     })
@@ -51,7 +51,7 @@ describe('Prices component', () => {
       const expected ="Any - $100"
 
       renderer.render(testComponent)
-      const button = findWithType(renderer.getRenderOutput(), 'button')
+      const button = findWithType(renderer.getRenderOutput(), 'a')
 
       expect(button).to.include(expected)
     })
@@ -71,7 +71,7 @@ describe('Prices component', () => {
       const expected ="$100 - $1000"
 
       renderer.render(testComponent)
-      const button = findWithType(renderer.getRenderOutput(), 'button')
+      const button = findWithType(renderer.getRenderOutput(), 'a')
 
       expect(button).to.include(expected)
     })
@@ -85,7 +85,7 @@ describe('Prices component', () => {
       const expected = true
 
       renderer.render(testComponent)
-      findWithType(renderer.getRenderOutput(), 'button').props.onClick()
+      findWithType(renderer.getRenderOutput(), 'a').props.onClick()
 
       expect(hasChanged).to.equal(expected)
     })

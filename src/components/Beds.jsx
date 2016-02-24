@@ -33,11 +33,11 @@ const Beds = (props) => {
 
       return (
         <div id="beds_refinement">
-          <button onClick={ () => togglePanel("beds") }>
+          <a onClick={ () => togglePanel("beds") }>
             <span>{this.labelText(numBedsSelected)}</span>
             &nbsp;
             <span>{currentSelectionPanel == 'beds' ? '^' : 'v'}</span>
-          </button>
+          </a>
 
           <select size="5"
                   style={ currentSelectionPanel == 'beds' ? {} : { display: "none" } }

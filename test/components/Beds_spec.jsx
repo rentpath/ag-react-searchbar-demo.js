@@ -25,7 +25,7 @@ describe('Beds component', () => {
       const expected ="BEDS"
 
       renderer.render(testComponent)
-      const button = findWithType(renderer.getRenderOutput(), 'button')
+      const button = findWithType(renderer.getRenderOutput(), 'a')
 
       expect(button).to.include(expected)
     })
@@ -38,7 +38,7 @@ describe('Beds component', () => {
       const expected ="Studio"
 
       renderer.render(testComponent)
-      const button = findWithType(renderer.getRenderOutput(), 'button')
+      const button = findWithType(renderer.getRenderOutput(), 'a')
 
       expect(button).to.include(expected)
     })
@@ -51,7 +51,7 @@ describe('Beds component', () => {
       const expected ="1 Bed"
 
       renderer.render(testComponent)
-      const button = findWithType(renderer.getRenderOutput(), 'button')
+      const button = findWithType(renderer.getRenderOutput(), 'a')
 
       expect(button).to.include(expected)
     })
@@ -64,7 +64,7 @@ describe('Beds component', () => {
       const expected ="2 Beds"
 
       renderer.render(testComponent)
-      const button = findWithType(renderer.getRenderOutput(), 'button')
+      const button = findWithType(renderer.getRenderOutput(), 'a')
 
       expect(button).to.include(expected)
     })
@@ -78,7 +78,7 @@ describe('Beds component', () => {
       const expected = true
 
       renderer.render(testComponent)
-      findWithType(renderer.getRenderOutput(), 'button').props.onClick()
+      findWithType(renderer.getRenderOutput(), 'a').props.onClick()
 
       expect(hasChanged).to.equal(expected)
     })

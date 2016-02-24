@@ -33,11 +33,11 @@ const Prices = (props) => {
 
       return (
         <div id="price_refinement">
-          <button onClick={ () => togglePanel('price') }>
+          <a onClick={ () => togglePanel('price') }>
             <span>{ this.labelText() }</span>
             &nbsp;
             <span>{ currentSelectionPanel == 'price' ? '^' : 'v' }</span>
-          </button>
+          </a>
 
           <div id="prices"
                style={ currentSelectionPanel == 'price' ? {} : { display: "none" } }>

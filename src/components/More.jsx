@@ -4,11 +4,11 @@ import { PropTypes } from "react"
 
 const More = ({ toggleOptionsPanel, additionalRefinementsPanelDisplayed }) => (
   <div>
-    <button onClick={ () => toggleOptionsPanel() }>
+    <a onClick={ () => toggleOptionsPanel() }>
       { additionalRefinementsPanelDisplayed ? 'LESS' : 'MORE' }
       &nbsp;
       <span>{ additionalRefinementsPanelDisplayed ? '^' : 'v' }</span>
-    </button>
+    </a>
   </div>
 )
 
