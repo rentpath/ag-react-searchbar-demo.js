@@ -3,7 +3,10 @@
 
 This is a proof-of-concept (POC) using React/Redux to rebuild the
 AG search bar. This POC is meant to be a conversation starter on
-ways to use React and Redux at Rentpath.
+ways to use React and Redux at Rentpath. The code has not been
+optimized so you may notice some duplication or refactoring
+opportunities - this was done on purpose to help the beginning react
+developer more easily understand react concepts.
 
 This came about out of a frustration in trying to change the existing
 AG code. The existing code is very difficult to work with due to
