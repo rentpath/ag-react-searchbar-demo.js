@@ -94,4 +94,5 @@ $ open http://localhost:8080
   - http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html
   - https://medium.com/javascript-scene/baby-s-first-reaction-2103348eccdd#.460w2guz2
   - http://reactkungfu.com/2015/07/approaches-to-testing-react-components-an-overview/?utm_campaign=buffer&utm_content=buffer51ecc&utm_medium=social&utm_source=twitter.com
-
+  - A Cartoon Guide to the Wilds of Data Handling
+      - https://www.youtube.com/watch?v=WIqbzHdEPVM&index=4&list=PLb0IAmt7-GS0M8Q95RIc2lOM6nc77q1IY
